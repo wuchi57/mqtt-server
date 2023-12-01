@@ -1,0 +1,9 @@
+version: '2.6'
+services:
+  air-conditioner:
+    image: emqx:latest
+    container_name: air-conditioner
+    ports:
+      - "18083:18083"
+      - "1883:1883"
+    restart: always
